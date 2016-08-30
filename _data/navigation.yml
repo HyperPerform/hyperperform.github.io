@@ -1,0 +1,16 @@
+# main links links
+main:
+  - title: "Features"
+    url: /features/
+
+  - title: "Get Started"
+    url: /get-started/
+
+  - title: "JavaDoc"
+    url: /javadoc/
+
+  - title: "Contact Us"
+    url: /contact-us/
+
+  - title: "Live Demo"
+    url: /live-demo/

@@ -1,0 +1,13 @@
+
+me.hyperperform
+me.hyperperform.esper
+me.hyperperform.event
+me.hyperperform.event.Calendar
+me.hyperperform.event.Git
+me.hyperperform.event.Travis
+me.hyperperform.listener
+me.hyperperform.reporting
+me.hyperperform.reporting.algorithm
+me.hyperperform.reporting.request
+me.hyperperform.reporting.response
+me.hyperperform.rest
