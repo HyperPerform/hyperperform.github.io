@@ -1,0 +1,134 @@
+
+<!-- Avinash Singh -->
+
+
+<!DOCTYPE html >
+<head>
+<meta http-equiv="content-type" 	content="text/html;charset=utf-8" />
+	<title>Contact</title>
+  <link rel="icon" type="image/png" href="img/Logo2.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/jquery-3.1.0.js"></script>
+</head>
+<style type="text/css">
+  body {background-color: black;}
+</style> 
+<body>
+
+<div class="container">
+<br/><br/><br/><br/>
+    <form class="well form-horizontal" action="https://formspree.io/hyperperformteam@gmail.com" method="post"  id="contact_form">
+<fieldset>
+
+<!-- Form Name -->
+<div >
+<center><legend style="color: #337AB7">Contact Us!<br/></legend></center>
+</div>
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label"><span style="color:red; font-weight:bolder;">* </span>Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="name" id="name" placeholder="Name" class="form-control"  type="text" required="required">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail (optional)</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" id="email" placeholder="E-Mail Address" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+       
+<div class="form-group">
+  <label class="col-md-4 control-label">Phone Number (optional)</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input id="phone" name="phone" placeholder="eg. 012 345 6789" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Subject -->
+<div class="form-group"> 
+  <label class="col-md-4 control-label">Subject</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="subject" id="subject" class="form-control selectpicker" required="required">
+      <option>Feedback</option>
+      <option>Complaint</option>
+      <option>Suggestion</option>
+      <option>Bug</option>
+    </select>
+  </div>
+</div>
+</div>
+
+<!-- Text area -->
+  
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label"><span style="color:red; font-weight:bolder;">* </span>Description</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+          <textarea class="form-control" name="comment" id="comment" required="required" placeholder="Write your comment here ..."></textarea>
+  </div>
+  </div>
+</div>
+
+<!-- Success message -->
+<center><div class="alert alert-danger" role="alert" id="success_message"></div> 
+    </center>
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <center><div class="col-md-4">
+    <button id="b" name="b" type="button" class="btn btn-warning" onclick="send()">Send <span class="glyphicon glyphicon-send"></span></button>
+      <div  id="bb" name="bb" ></div>
+      </div></center>
+</div>
+
+</fieldset>
+</form>
+</div>
+    </div><!-- /.container -->
+
+<script type="text/javascript">
+//    	$("#bb").addClass("hidden");
+				
+   function send()
+    {
+        if ( ($('#name').val().length > 0 ) && ($('#comment').val().length > 0) )
+        {
+            $("#b").html("<span  class='icon-spinner icon-spin icon-large' ></span>");
+            $("#contact_form").submit();
+        }
+        else $('#success_message').text("Please fill out the required fields");
+    }
+</script>
+
+
+
+
+</body>
+
+</html>
+
+
