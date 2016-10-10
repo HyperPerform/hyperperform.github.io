@@ -948,7 +948,7 @@ a.dash:hover
 .sub {
 	color: black;
 	text-align: center;
-	font-style: italic;
+	/*font-style: italic;*/
 }
 
 .container-full {

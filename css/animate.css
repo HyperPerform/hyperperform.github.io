@@ -24,7 +24,7 @@ Copyright (c) 2014 Daniel Eden
   animation-duration: 2s;
 }
 
-@-webkit-keyframes bounce {
+/*@-webkit-keyframes bounce {
   0%, 20%, 53%, 80%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
     transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -90,7 +90,7 @@ Copyright (c) 2014 Daniel Eden
   -webkit-transform-origin: center bottom;
   -ms-transform-origin: center bottom;
   transform-origin: center bottom;
-}
+}*/
 
 @-webkit-keyframes flash {
   0%, 50%, 100% {
