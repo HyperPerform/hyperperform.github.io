@@ -82,7 +82,7 @@
 				<section id="slider">
 					<div class="container-full">
 						<div class="slider">
-							<div id="main-slider" data-interval="" class="carousel slide">
+							<div id="main-slider" class="carousel slide" data-ride="carousel" data-interval="8000">
 								<ol class="carousel-indicators">
 									<li data-target="#main-slider" data-slide-to="0" class="active"></li>
 									<li data-target="#main-slider" data-slide-to="1"></li>
@@ -198,9 +198,9 @@
 
 			<script type="text/javascript">
 			$(document).ready(function () {
-			    $('.carousel').carousel({
-			        interval: 4000
-			    });
+//			    $('.carousel').carousel({
+//			        interval: 4000
+//			    });
 
 			    $('.carousel').carousel('cycle');
 			});
