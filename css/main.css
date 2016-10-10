@@ -332,6 +332,10 @@ img{
  }
 
 }
+
+.clear {
+	
+}
 	
 a.dash span
 {
@@ -340,6 +344,18 @@ a.dash span
 }
 
 a.dash:hover
+{
+	color: #343C46 !important;
+	background-color: #FFF !important;
+}
+
+a.java span
+{
+	font-weight: bold;
+	color: #F98F13;
+}
+
+a.java:hover
 {
 	color: #343C46 !important;
 	background-color: #FFF !important;
