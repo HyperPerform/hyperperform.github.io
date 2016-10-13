@@ -179,7 +179,11 @@ img{
 
 #header .topnavbar{
 	height: 60px;
+	text-align: left;
+	text-overflow: ellipsis;
+	margin-bottom:0px;margin-left:0px;margin-right:0px;clear:both;
 }
+
 
 #header .navbar-header a{
 	font-family: 'Roboto', sans-serif;
@@ -365,10 +369,35 @@ a.java:hover
 	color: #343C46 !important;
 	background-color: #FFF !important;
 }
+ 
+.pull{
+/*	position: relative;;
+	/*margin-left: 10%; 
+	width: 200px;
+	height: 100px;
+	margin: 0 auto;
+	background-color: blue;
+	border: solid;*/
+	position: relative;
+	width: 100% !important;
+	padding: 0 !important;
+	/*margin: auto 25% auto 25% !important;*/
+}
+
+.pull img {
+	margin: 0 auto;
+}
+
+.non-center {
+	text-align: left !important;
+}
+
 
 .img-responsive
 {
 	padding: 0 !important;
+	/*height: auto;*/
+	width: 80%;
 }
 
 #header .navbar-header a {
@@ -402,11 +431,22 @@ a.java:hover
 	height: 600px;
 	padding-top: 100px;
 }
-#slider .slide-element img{
+#slider .slide-element img {
 	float: left;
     height: 300px;
-    margin: 50px 80px 0 70px;
+    margin: 0 auto;
+    margin: 50px 80px 0 80px;
 }
+
+.logoSlide {
+	float: none !important;
+	width: 300px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    margin-top: 0px !important;
+    margin-top: 35px !important;
+}
+
 #slider .carousel-control{
 	background-image: none;
     border: 1px solid #fff;
@@ -441,8 +481,10 @@ a.java:hover
 	background: #6d7d92;
 }
 #slider .content_slide{
-	margin-top: 5%;
+	margin-top: 15%;
 	margin-right: 12px;
+	text-align: center;
+	padding-bottom: 30% !important;
 }
 
 #slider .content_slide h2{
@@ -465,6 +507,11 @@ a.java:hover
 }
 #slider h1 span{
 	color: #2e8957;
+}
+
+.slide-row
+{
+	padding: 0 !important;
 }
 /* end slider */
 
