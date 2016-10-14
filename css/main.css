@@ -1199,3 +1199,38 @@ a#scrollUp i{
   font-size: 30px;
 }
 /* end scrollup 
+
+
+
+
+
+/* start about page  */
+#doc .container-full{
+	background: #1F968B;
+}
+#doc .doc_content{
+	margin-top: 40px;
+	min-height: 450px;
+}
+#doc .web_content h1{
+	color: #444e5d;
+    font-family: Arial,sans-serif;
+    font-size: 36px;
+}
+#doc .web_content h4{
+	color: #ff4b5a;
+	font-size: 26px;
+	font-family: "Roboto" sans-serif;
+}
+#doc .web_content p{
+	color: #4d5866;
+	font-size: 22px;
+	line-height: 28px;
+}
+#doc .web_content a{
+	color: #ffffff;
+    font-size: 24px;
+    padding: 12px 32px;
+    margin-top: 22px;
+} 
+
