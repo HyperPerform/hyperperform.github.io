@@ -1206,7 +1206,15 @@ a#scrollUp i{
 
 /* start about page  */
 #doc .container-full{
-	background: #1F968B;
+	padding-top: 100px;
+	background: #8AC249;
+}
+#doc a {
+	color: #333333;
+}
+
+#doc a:hover {
+	color: blue;
 }
 #doc .doc_content{
 	margin-top: 40px;
