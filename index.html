@@ -289,50 +289,114 @@
 				</div>
 			</section> <!-- /about  -->
 
-
+			<!-- Modal -->
+			<div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog modal-lg" role="dialog">
+			    <div class="modal-content ">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			        <h4 class="modal-title " id="myModalLabel">Modal title</h4>
+			      </div>
+			      <div class="container">
+			      <div class="modal-body" id="modalDoc" style="height: 650px">
+			        
+			      </div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			      
+			      </div>
+			    </div>
+			  </div>
+			</div>
 			<!-- documentation -->
 			<div id="doc">
 			<div class="container-full">
 				<div class="container">
 				<div class="dividerHeading text-center">
 					<h2 class="section-title">Documentation</h2>
-				 	
-				 	<div class="row">
-					 	<div class="col-md-3 col-lg-3 col-sm-6 col-md-6">
-					 		<div id="ar" ></div>
+ 				 	<div class="row">
+ 				 	<div class="col-md-1 col-lg-1" ></div>
+					 	<div class="col-md-2 col-lg-2 col-sm-6 col-md-6" id="arb">
+				 			<div class="img-box">	
+				 				<img class="img-responsive img-rounded hack" src="img/logo-adobe-pdf.jpg">
+				 			</div>
 					 		<h3><a href="doc/Architectural_Requirements.pdf">Architectural Requirements</a></h2>
 					 	</div>
-					 	<div class="col-md-3 col-lg-3 col-sm-6 col-md-6">
-					 		<div id="fr"></div>
+					 	<div class="col-md-2 col-lg-2 col-sm-6 col-md-6" id="fr">		 
+				 			<div class="img-box">	
+				 				<img class="img-responsive img-rounded hack" src="img/logo-adobe-pdf.jpg">
+				 			</div>
 					 		<h3><a href="doc/Functional_Requirements.pdf">Functional Requirements</a></h2>
 					 	</div>
-					 	<div class="col-md-3 col-lg-3 col-sm-6 col-md-6">
-					 		<div id="td"></div>
+					 	<div class="col-md-2 col-lg-2 col-sm-6 col-md-6" id="td">
+				 			<div class="img-box">	
+				 				<img class="img-responsive img-rounded hack" src="img/logo-adobe-pdf.jpg">
+				 			</div> 		
 					 		<h3><a href="doc/testing.pdf">Testing Document</a></h2>
 					 	</div>
-					 	<div class="col-md-3 col-lg-3 col-sm-6 col-md-6">
-					 		<div id="um"></div>
+					 	<div class="col-md-2 col-lg-2 col-sm-6 col-md-6" id="um">
+				 			<div class="img-box">	
+				 				<img class="img-responsive img-rounded hack" src="img/logo-adobe-pdf.jpg">
+				 			</div>
 					 		<h3><a href="doc/user_manual.pdf">User Manual</a></h2>
 					 	</div>
+					 	<div class="col-md-2 col-lg-2 col-sm-6 col-md-6" id="jd">
+				 			<div class="img-box">	
+				 				<img class="img-responsive img-rounded hack" src="img/Java_Logo.png">
+				 			</div>
+					 		<h3><a href="https://hyperperform.github.io/javadoc">JavaDoc</a></h2>
+					 	</div>
+					 	<div class="col-md-1 col-lg-1" ></div>
 				 	</div>
 				 <script>
-						var iframe = $('<iframe>');
-            			iframe.attr('src','doc/Architectural_Requirements.pdf');
-            			$('#ar').append(iframe); 
-
-						var iframe = $('<iframe>');
-            			iframe.attr('src','doc/Functional_Requirements.pdf');
-            			$('#fr').append(iframe); 
 
 
-						var iframe = $('<iframe>');
-            			iframe.attr('src','doc/testing.pdf');
-            			$('#td').append(iframe); 
+            			$("#fr").click(function(){
+            				// alert();
+            				var iframe = $("<iframe height='100%' width='50%'>");
+            				iframe.attr('src','doc/Functional_Requirements.pdf');
+            				$('#modalDoc').html(iframe); 
+            				$("#myModalLabel").html("Functional Requirements");
+            				$("#myModal").modal('show');
+            			});
 
-						var iframe = $('<iframe>');
-            			iframe.attr('src','doc/user_manual.pdf');
-            			$('#um').append(iframe); 
+            			$("#arb").click(function(){
+            				// alert();
+            				var iframe = $("<iframe height='100%' width='50%'>");
+            				iframe.attr('src','doc/Architectural_Requirements.pdf');
+            				$('#modalDoc').html(iframe); 
+            				$("#myModalLabel").html("Architectural Requirements");
+            				$("#myModal").modal('show');
+            			});
 
+            			$("#td").click(function(){
+            				// alert();
+            				var iframe = $("<iframe height='100%' width='50%'>");
+            				iframe.attr('src','doc/testing.pdf');
+            				$('#modalDoc').html(iframe); 
+            				$("#myModalLabel").html("Testing Document");
+            				$("#myModal").modal('show');
+            			});
+            			$("#um").click(function(){
+            				// alert();
+            				var iframe = $("<iframe height='100%' width='50%'>");
+            				iframe.attr('src','doc/user_manual.pdf');
+            				$('#modalDoc').html(iframe); 
+            				$("#myModalLabel").html("User Manual");
+            				$("#myModal").modal('show');
+            			});
+
+            			$("#jd").click(function(){
+            				// alert();
+            				var iframe = $("<iframe height='100%' width='50%'>");
+            				iframe.attr('src','https://hyperperform.github.io/javadoc/');
+            				$('#modalDoc').html(iframe); 
+            				$("#myModalLabel").html("JavaDoc");
+            				$("#myModal").modal('show');
+            			});
 
 				 </script>
 				</div>
