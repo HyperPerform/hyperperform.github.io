@@ -80,6 +80,9 @@
 	#contact .carousel-control{
 		display: none;
 	}
+	#header .topnavbar {
+		margin-right: 0px !important;
+	}
 	#header .navbar-nav a{
 		width: 250px;
 		height: 32px;
@@ -90,6 +93,9 @@
 		background: #38404A;
 		border-bottom: 1px solid #ddd;
 		border: 1px solid #ddd;
+	}
+	#header .ribbon {
+		display: none;
 	}
 	#header .navbar-nav a:first-child{
 		border-top: 1px solid #ddd;
