@@ -1271,3 +1271,9 @@ a#scrollUp i{
 	height: 300% !important;
 	/*width: 100% !important;*/
 }
+
+
+#system .container-full {
+	background-color: #cbd15e;
+	padding-top: 100px;
+}
