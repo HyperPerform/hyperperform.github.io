@@ -310,6 +310,7 @@
 		background: #38404A;
 		border-bottom: 1px solid #ddd;
 		border: 1px solid #ddd;
+		opacity: 0.45;
 	}
 	#header .ribbon {
 		/*display: none;*/
