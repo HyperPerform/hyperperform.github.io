@@ -33,14 +33,6 @@
 
 		<!-- Script -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-		 
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-            
-            <!--[if lt IE 9]>
-              <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-              <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-            <![endif]-->
-
 		<script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -51,6 +43,25 @@
         <script src="js/smoothscroll.js"></script>
         <script src="js/visible.min.js"></script>
         <script src="js/jquery.nav.js"></script>
+
+        <!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> -->
+        <!-- Touch pdf -->
+		<script type="text/javascript" src="js/pdf.compatibility.js"></script>
+		<script type="text/javascript" src="js/pdf.js"></script>
+		<script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
+		<script type="text/javascript" src="js/jquery.panzoom.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/jquery.touchPDF.js"></script>
+		<link href="js/jquery.touchPDF.css" rel="stylesheet" media="screen" /> 
+		 
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+            
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+              <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+
+
 
     </head>
     <body>
@@ -280,13 +291,54 @@
 
 
 			<!-- documentation -->
-			<section id="doc">
+			<div id="doc">
 			<div class="container-full">
 				<div class="container">
-				 <h1>Some Stuff here ... </h1>
+				<div class="dividerHeading text-center">
+					<h2 class="section-title">Documentation</h2>
+				 	
+				 	<div class="row">
+					 	<div class="col-md-3 col-lg-3 col-sm-6 col-md-6">
+					 		<div id="ar" ></div>
+					 		<h3><a href="doc/Architectural_Requirements.pdf">Architectural Requirements</a></h2>
+					 	</div>
+					 	<div class="col-md-3 col-lg-3 col-sm-6 col-md-6">
+					 		<div id="fr"></div>
+					 		<h3><a href="doc/Functional_Requirements.pdf">Functional Requirements</a></h2>
+					 	</div>
+					 	<div class="col-md-3 col-lg-3 col-sm-6 col-md-6">
+					 		<div id="td"></div>
+					 		<h3><a href="doc/testing.pdf">Testing Document</a></h2>
+					 	</div>
+					 	<div class="col-md-3 col-lg-3 col-sm-6 col-md-6">
+					 		<div id="um"></div>
+					 		<h3><a href="doc/user_manual.pdf">User Manual</a></h2>
+					 	</div>
+				 	</div>
+				 <script>
+						var iframe = $('<iframe>');
+            			iframe.attr('src','doc/Architectural_Requirements.pdf');
+            			$('#ar').append(iframe); 
+
+						var iframe = $('<iframe>');
+            			iframe.attr('src','doc/Functional_Requirements.pdf');
+            			$('#fr').append(iframe); 
+
+
+						var iframe = $('<iframe>');
+            			iframe.attr('src','doc/testing.pdf');
+            			$('#td').append(iframe); 
+
+						var iframe = $('<iframe>');
+            			iframe.attr('src','doc/user_manual.pdf');
+            			$('#um').append(iframe); 
+
+
+				 </script>
+				</div>
 				</div>
 			</div>
-			</section>
+			</div>
 			<!-- /documentation -->
 				
 			<!-- Start clients -->
@@ -309,7 +361,7 @@
 					</div>
 			</div>
 			<!-- End clients -->
-			</section>
+			<!-- </section> -->
 			<!-- End testimonial-clients section -->
 
 
