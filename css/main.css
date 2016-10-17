@@ -1209,6 +1209,31 @@ a#scrollUp i{
 	padding-top: 100px;
 	background: #8AC249;
 }
+#doc .img-box:hover
+{
+ 	background-color: rgba(0, 0, 0, 0.75);
+ 	opacity: 0.6;
+	
+ 	content: "View";
+}
+
+#doc .img-box h2:hover
+{
+	display: block;
+	color: white;
+	margin-top: 50%;
+	z-index: 9999;
+	font-size: larger;
+}
+#doc .img-box h2 {
+	display: none; 	
+ }
+ 
+.img-rounded 
+{
+ height:100px; 
+ width: 100px
+}
 #doc a {
 	color: #333333;
 }
@@ -1242,3 +1267,7 @@ a#scrollUp i{
     margin-top: 22px;
 } 
 
+.full {
+	height: 300% !important;
+	/*width: 100% !important;*/
+}
