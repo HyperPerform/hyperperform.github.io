@@ -1272,8 +1272,15 @@ a#scrollUp i{
 	/*width: 100% !important;*/
 }
 
-
+.tech {
+	height: 100px;
+	width: 100px;
+}
 #system .container-full {
-	background-color: #cbd15e;
+	background-color: #9E9E9E	;
 	padding-top: 100px;
+}
+
+.white {
+	color: #ffffff;
 }
