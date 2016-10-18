@@ -107,8 +107,8 @@
 				<!-- Slider -->
 				<section id="slider">
 					<div class="container-full">
-						<div class="slider" data-ride="carousel" data-interval="8000">
-							<div id="main-slider" class="carousel slide">
+						<div class="slider" >
+							<div id="main-slider" class="carousel slide" data-interval="8000" data-pause="hover" data-wrap="true" data-keyboard="true" data-ride="carousel">
 								<ol class="carousel-indicators">
 									<li data-target="#main-slider" data-slide-to="0" class="active"></li>
 									<li data-target="#main-slider" data-slide-to="1"></li>
@@ -131,7 +131,7 @@
 												<div class="content_slide">
 													<h2>HyperPerform</h2>
 													<p>Your, open source, automated, performance tracking solution </p>
-													<h1> Visit our <a href="https://dashboard.hyperperform.me">Dashboard</a></h1>
+													<h1> Visit our <a href="https://dashboard.hyperperform.me">Dashboard</a> for a live demo</h1>
 												</div>
 											</div>	
 											</div>
@@ -249,9 +249,9 @@
 
 			<script type="text/javascript">
 			$(document).ready(function () {
-//			    $('.carousel').carousel({
-//			        interval: 4000
-//			    });
+			    $('.carousel').carousel({
+			        interval: 8000
+			    });
 
 			   $('.carousel').carousel('cycle');
 			});
