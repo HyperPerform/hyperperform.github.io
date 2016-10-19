@@ -187,7 +187,15 @@
 	#footer p{
 		font-size: 14px;
 	}
+
+
+	.small {
+		margin: 0 auto 0 auto !important;
+	}
+
 }
+
+
 
 /* Landscape phone to portrait tablet */
 @media only screen  (min-width: 768px) and (max-width: 1024px)  {
@@ -244,6 +252,10 @@
 		border-bottom: 1px solid #ddd;
 		border: 1px solid #ddd;
 	}
+
+	.small {
+		margin: 0 auto !important;
+	}
 }
 @media (max-width: 568px) {
 	#header .navbar-nav a{
@@ -264,6 +276,10 @@
 	} 
 	#header .navbar-nav li.active a{
 		border-radius:0px;
+	}
+
+	.small {
+		margin: 0 auto !important;
 	}
 }
 @media only screen and (min-width: 668px) and (max-width: 991px) {
