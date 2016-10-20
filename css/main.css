@@ -1285,3 +1285,25 @@ a#scrollUp i{
 	color: #ffffff;
 }
 
+.back {
+	/*background-color: transparent !important;*/
+	background-color: #2A3039 !important;
+}
+
+
+#menu a {
+	background-color: transparent !important;
+
+}
+
+#menu a:hover {
+	background-color:  #ff4b5a !important; 
+}
+
+.dashboard {
+	background-color: #8AC249 !important;
+}
+
+.dashboard:hover {
+	background-color:  #ff4b5a !important; 
+}
