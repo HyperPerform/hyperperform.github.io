@@ -1,12 +1,17 @@
 /* Portrait & landscape phone */
 @media (min-width: 320px) and (max-width: 480px) {
 
+	.ytube {
+		width: 400px !important;
+	}
+
 	#header {
 		height: auto !important;
 	}
 
 	.img-responsive {
 		width: 300px !important;
+		height: auto !important;
 	}
 	.section-title{
 		font-size: 34px;
@@ -18,7 +23,7 @@
 		margin-left: 10px;
 	}
 	#slider .carousel-control{
-		display: none;
+		/*display: none;*/
 	}
 	#about .imac{
 		margin-left: 64px;
@@ -208,12 +213,17 @@
 /* Landscape phone to portrait tablet */
 @media only screen  (min-width: 768px) and (max-width: 1024px)  {
 
+	.ytube {
+		width: 1000px !important;
+	}
+
 	#header {
 		height: auto !important;
 	}
 
 	.img-responsive {
 		width: 1000px !important;
+		height: auto !important;
 	}
 
 	.carousel-caption {
@@ -276,12 +286,20 @@
 }
 @media (max-width: 568px) {
 
+	.ytube {
+		width: 300px !important;
+		height: 200px !important;
+	}
+
 	.img-responsive {
 		width: 500px !important;
+		float: middle;
+		margin-left: 0 !important;
+
 	}
 	
 	#header {
-		min-width: 80% !important;
+		height: auto !important;
 	}
 
 	#header .navbar-nav a{
@@ -307,6 +325,65 @@
 	.small {
 		margin: 0 auto !important;
 	}
+	.logoSlide {
+		height: 180px !important;
+		width: auto !important;
+		margin: 0 auto !important;
+	}
+	#slider .slide-element img{
+		margin: -10px -32px 33px 55px;
+	}
+	#slider .content_slide{
+		margin-top: 30px;
+	}
+	#slider .content_slide h2{
+		font-size: 22px;
+		font-weight: bolder;
+	}
+	#slider .content_slide p{
+		font-size: 18px;
+	}
+	#slider .content_slide ol{
+		font-size: 18px;
+	}
+	#slider ul{
+		margin-top: 0px;
+		font-size: 18px;
+	}
+	#slider h1{
+		font-size: 20px;
+	}
+	#slider .carousel-indicators li{
+		width: 6px;
+		height: 6px;
+		margin: 5px;
+		background-color: #23282f;
+		border: none;
+	}
+
+	#slider .carousel-control{
+	background-image: none;
+    /*border: 1px solid #fff;*/
+    font-size: 1em;
+    height: 64px;
+    line-height: 0;
+    margin: 230px 10px 0px 10px;
+    padding: 12px 22px 0px 10px;
+    width: 20px;
+   
+    -webkit-transition: color .2s;
+    -moz-transition: color .2s;
+    -ms-transition: color .2s;
+    /*-0-transition: color .2s;*/
+    transition: color .2s;
+    
+	}
+	#slider .carousel-control:hover,
+	#slider .corousel-control:focus{
+		font-size: 1em;
+		color: rgba(255,255,255,1);
+		
+	}
 }
 @media only screen and (min-width: 668px) and (max-width: 991px) {
 
@@ -316,7 +393,12 @@
 	}
 
 	.img-responsive {
-		width: 900 !important;
+		width: 900px !important;
+		height: auto !important;
+	}
+
+	.ytube {
+		width: 900px !important;
 	}
 
 	#slider .slide-element img{
