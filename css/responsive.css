@@ -1,5 +1,13 @@
 /* Portrait & landscape phone */
 @media (min-width: 320px) and (max-width: 480px) {
+
+	#header {
+		height: auto !important;
+	}
+
+	.img-responsive {
+		width: 300px !important;
+	}
 	.section-title{
 		font-size: 34px;
 	}
@@ -199,6 +207,15 @@
 
 /* Landscape phone to portrait tablet */
 @media only screen  (min-width: 768px) and (max-width: 1024px)  {
+
+	#header {
+		height: auto !important;
+	}
+
+	.img-responsive {
+		width: 1000px !important;
+	}
+
 	.carousel-caption {
 		font-size: 16px;
 	}
@@ -258,6 +275,15 @@
 	}
 }
 @media (max-width: 568px) {
+
+	.img-responsive {
+		width: 500px !important;
+	}
+	
+	#header {
+		min-width: 80% !important;
+	}
+
 	#header .navbar-nav a{
 		width: 250px;
 		height: 32px;
@@ -283,6 +309,16 @@
 	}
 }
 @media only screen and (min-width: 668px) and (max-width: 991px) {
+
+
+	#header {
+		height: auto !important;
+	}
+
+	.img-responsive {
+		width: 900 !important;
+	}
+
 	#slider .slide-element img{
 		margin: -10px -32px 33px 55px;
 	}
