@@ -28,7 +28,7 @@ html {
 
 .black {
 	color: black;
-	
+
 }
 .green {
 	color: #F44336;
@@ -179,11 +179,18 @@ img{
 	margin: auto;
 
 }
+
+.img-responsive {
+	height: 80% !important;
+	width: 80% !important;
+	margin: 15%  !important;
+}
+
 /* Header */
 #header{
-    /*width: auto;*/
-    /*min-width: 50%;*/
-    /*height: auto;*/
+    width: auto;
+    /*min-width: 70%;*/
+    height: auto;
     background-image: url("../img/Blurred_Background_HD_1.png");
     background-size: cover;
     /*-webkit-filter: blur(5px);*/
@@ -463,13 +470,13 @@ a.java:hover
 
 #slider .carousel-control{
 	background-image: none;
-    border: 1px solid #fff;
-    font-size: 1.5em;
+    /*border: 1px solid #fff;*/
+    font-size: 3em;
     height: 64px;
     line-height: 0;
-    margin: 230px 20px 0px 20px;
-    padding: 12px 22px;
-    width: 108px;
+    margin: 230px 10px 0px 10px;
+    padding: 12px 22px 0px 10px;
+    width: 50px;
    
     -webkit-transition: color .2s;
     -moz-transition: color .2s;
@@ -480,7 +487,7 @@ a.java:hover
 }
 #slider .carousel-control:hover,
 #slider .corousel-control:focus{
-	font-size: 1.5em;
+	font-size: 3.5em;
 	color: rgba(255,255,255,1);
 	font-weight: bold;
 }
@@ -1321,3 +1328,5 @@ a#scrollUp i{
 .dashboard:hover {
 	background-color:  #ff4b5a !important; 
 }
+
+
