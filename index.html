@@ -90,7 +90,14 @@
 									<li><a href="#about">ABOUT</a></li>
 									<!-- <li><a href="#portfolio">PORTFOLIO</a></li> -->
 									<!-- <li><a href="#pricing">PRICING</a></li> -->
-									<li><a href="#doc"> DOCUMENTATION </a></li>
+									<li class="dropdown">
+							        <a class="dropdown-toggle" data-toggle="dropdown" href="#">DOCUMENTATION
+							        <span class="caret"></span></a>
+							        <ul class="dropdown-menu back" id="menu">
+							          <li><a href="#doc" class="text-center">DOCS</a></li> 
+							          <li><a href="#demo" class="sub text-center">DEMOS</a></li> 
+							        </ul>
+							      </li>
 									<li><a href="#clients">CLIENT</a></li>
 									<li class="dropdown">
 							        <a class="dropdown-toggle" data-toggle="dropdown" href="#">SYSTEM
@@ -99,6 +106,7 @@
 							          <li class="dashboard"><a href="https://dashboard.hyperperform.me" class="sub  text-center">DASHBOARD</a></li> 
 							          <li><a href="#system" class="sub text-center">TECHNOLOGIES</a></li> 
 							          <li><a href="#ser" class="sub text-center">SERVICES</a></li>
+							          <li><a href="#sysf" class="sub text-center">FEATURES</a></li>
 							          <!-- <li><a href="#" class="text-center"></a></li>  -->
 							        </ul>
 							      </li>
@@ -127,6 +135,7 @@
 									<li data-target="#main-slider" data-slide-to="4"></li>
 									<li data-target="#main-slider" data-slide-to="5"></li>
 									<li data-target="#main-slider" data-slide-to="6"></li>
+									<li data-target="#main-slider" data-slide-to="7"></li>
 								</ol> <!-- /#carousel-indicators -->
 
 								<!-- Carousel items -->
@@ -229,6 +238,26 @@
 										</div>
 									</div>
 
+
+
+									<div class="item">
+										<div class="container slide-element">
+											<div class="row slide-row">
+											    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+													<img class="img-responsive" src="img/pluggable_platform.png" alt=""  >
+												</div>
+												<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+													<div class="content_slide">
+														<span><h2>Embracing Pluggability </h2></span>
+														<p>One of the main attractions of the system is that we've strived to make it fully pluggable. With this it makes the system highly configurable to match your needs.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+
 									<div class="item">
 										<div class="container slide-element">
 											<div class="row slide-row">
@@ -294,6 +323,7 @@
 									<h4 class="sub">Our Continuous Integration tool to keep the build in check.</h4></a>
 								</div> 
 							</div><!-- /row -->
+
 						</div>
 					</div> 
 				</div>
@@ -410,6 +440,15 @@
 
 				 </script>
 				</div>
+					<div class="row" id="demo">
+					<h2 class="section-title">DEMONSTRATIONS</h2><br/><br/>
+						<div class="col-6 col-lg-6 col-sm-12 col-md-6 col-xs-12 text-center">
+							<iframe class="ytube" width="560" height="315" src="https://www.youtube.com/embed/fIHH5-HVS9o" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="col-6 col-lg-6 col-sm-12 col-md-6 col-xs-12 text-center">
+						<iframe class="ytube" width="560" height="315" src="https://www.youtube.com/embed/sC9abcLLQpI" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
 				</div>
 			</div>
 			</div>
@@ -438,7 +477,7 @@
 			<!-- </section> -->
 			<!-- End testimonial-clients section -->
 
-
+			<!-- System -->
 			<div id="system">
 				<div class="container-full">
 					<h1 class="text-center white">Technology Stack</h1>
@@ -492,8 +531,8 @@
 					<!-- Services -->
 					<div id="ser" class="row">
 
-					<h1  class="text-center white">Services</h1><br/><br/><br/><br/><br/>
-<!-- 						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
+						<h1  class="text-center white">Services</h1><br/><br/><br/><br/><br/>
+						<!--	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
 						 <img style="margin: -50px 30px" height="150px" width="150px" src="img/logos/digitalOcean.png.png">
 						</div>
 						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"  >
@@ -503,6 +542,7 @@
 						 <img  style="margin: -25px 50px" height="150px" width="160px" src="img/logos/travisci.png">
 						</div>
 						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
+					
 						 <img  style="margin: -50px 70px" height="150px" width="120px" src="img/logos/wtextblack.png">
 						</div>
 						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
@@ -513,8 +553,39 @@
 						</div> -->
 						<img class="img-responsive" src="img/logos/services.png" style="width: 90% !important; margin: -5% auto;" >
 					</div>
+
+					<div id="sysf">
+						<div class="container">
+						<br/><br/><br/><br/>
+							<h1 class="text-center white">SYSTEM FEATURES</h1>
+							<div class="row">
+								<div class="col-md-4 col-lg-4 col-xs-12 col-sm-12 text-center">
+									<i class="fa fa-puzzle-piece fa-5x text-center green" aria-hidden="true"></i>
+									<h3 class="black"><b>Pluggability</b></h3>
+									<h4 class="black"> Our entire system is fully pluggable. Using dependency injection we are able to keep each subsystem independent. Thus one could easily modify or replace an entire subsystem with minimal modifications.</h4>
+								</div>
+
+								<div class="col-md-4 col-lg-4 col-xs-12 col-sm-12 text-center">
+									<i class="fa fa-magic fa-5x text-center teal " aria-hidden="true"></i>
+									<h3 class="black"><b>Algorithms</b></h3>
+									<h4  class="black">
+									Through the strategy design pattern we have acquired the ability to easily add in new algorithms. One use these algorithms interchangeably to quantify employee performance.
+										
+									</h4>
+								</div>
+
+								<div class="col-md-4 col-lg-4 col-xs-12 col-sm-12 text-center">
+									<i class="fa fa-wrench fa-5x gold" aria-hidden="true"></i>
+									<h3 class="black"><b>Maintainability</b></h3>
+									<h4  class="black"> Due to the highly pluggable nature of our system, you can easily swap out components without affecting the other sub-systems. This can lead to easier expansion, enhancement or reparation of the system. </h4>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
-			</div>
+			</div> 
+			<!-- System -->
 
 
 		<section id="team">
@@ -588,7 +659,7 @@
 						<div class="footer-text">
 							<h1>Tell us what you think</h1>
 							<p>Want to know more or provide feedback</p>
-							<a href="contact.html" class="btn btn-red">Contact US</a>
+							<a href="contact.html" class="btn btn-red">Contact Us</a>
 						</div>
 					</div>
 				</div>
