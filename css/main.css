@@ -22,7 +22,21 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
+.teal {
+	color: teal;
+}
 
+.black {
+	color: black;
+	
+}
+.green {
+	color: #F44336;
+}
+
+.gold {
+	color: #5E35B1;
+}
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
