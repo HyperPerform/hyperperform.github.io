@@ -181,9 +181,13 @@ img{
 }
 
 .img-responsive {
-	height: 80% ;
-	width: 80% ;
+	height: 60% !important;
+	width: 80% !important;
 	margin: 15%  ;
+}
+
+.down {
+	margin-top: 85px !important;
 }
 
 /* Header */
